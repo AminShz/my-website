@@ -1,42 +1,56 @@
+/* Base styles */
 body {
-  background-color: #f5f5f5;
+  margin: 0;
   font-family: Arial, sans-serif;
-}
-
-h1 {
-  color: blue;
-}
-
-p {
+  background-color: #f5f5f5;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Navigation */
 nav {
-  background-color: #ddd;
-  padding: 10px;
+  background-color: #004080;
+  padding: 12px;
+  text-align: center;
 }
 
 nav a {
-  margin-right: 10px;
+  margin: 0 12px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: blue;
+  text-decoration: underline;
 }
 
+/* Headings */
+h1, h2, h3 {
+  color: #004080;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+}
+
+/* Teaching (courses list) */
 .courses {
-  list-style: none;       /* remove bullets */
+  list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px auto;
+  max-width: 700px;
 }
 
 .courses li {
-  display: flex;          /* use flexbox layout */
-  justify-content: space-between;  /* push title left, year right */
-  padding: 4px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .course-title {
@@ -44,24 +58,27 @@ nav a:hover {
 }
 
 .course-year {
-  color: rgb(45, 16, 192);
+  color: #2d10c0;
   font-style: italic;
 }
 
+/* Research list */
 .research-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px auto;
+  max-width: 700px;
 }
 
 .research-list li {
   display: flex;
-  justify-content: space-between; /* title left, year or link right */
-  padding: 6px 0;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .research-title {
-  max-width: 75%; /* keeps titles from crowding */
+  max-width: 75%;
 }
 
 .research-year a {
@@ -69,12 +86,16 @@ nav a:hover {
   text-decoration: none;
   font-style: italic;
 }
+
 .research-year a:hover {
-  color: blue;
+  color: #004080;
 }
 
+/* Paper toggle details */
 .paper {
-  margin-bottom: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  font-size: 14px; 
 }
 
 .paper-title {
@@ -82,16 +103,18 @@ nav a:hover {
   margin-right: 10px;
 }
 
+/* About section */
 .about-section {
   display: flex;
   align-items: center;
   gap: 20px;
+  justify-content: center;
+  margin: 20px;
 }
-
 
 .about-card {
   max-width: 600px;
-  margin: 40px auto;     /* centers the card */
+  margin: 40px auto;
   padding: 20px;
   background-color: white;
   border-radius: 12px;
@@ -105,17 +128,21 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
+/* Education list */
 .education {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px auto;
+  max-width: 700px;
 }
 
 .education li {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;    /* allows wrapping if screen is narrow */
+  flex-wrap: wrap;
   margin-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
 }
 
 .degree {
@@ -133,3 +160,39 @@ nav a:hover {
   color: #555;
 }
 
+.home-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.home-links li {
+  margin: 10px 0;
+}
+
+.home-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #004080;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.home-links a:hover {
+  background: #0066cc;
+}
+
+.toggle-btn {
+  font-size: 12px;       /* smaller font */
+  padding: 4px 8px;      /* compact size */
+  background: #004080;   /* dark blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background: #0066cc;
+}
