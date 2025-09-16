@@ -36,6 +36,7 @@ h1, h2, h3 {
 /* Paragraphs */
 p {
   margin-bottom: 15px;
+  font-size: 14px; 
 }
 
 /* Teaching (courses list) */
@@ -44,6 +45,7 @@ p {
   padding: 0;
   margin: 20px auto;
   max-width: 700px;
+  font-size: 12px; 
 }
 
 .courses li {
@@ -51,15 +53,18 @@ p {
   justify-content: space-between;
   padding: 6px 0;
   border-bottom: 1px solid #ddd;
+  font-size: 12px; 
 }
 
 .course-title {
   font-weight: normal;
+  font-size: 12px; 
 }
 
 .course-year {
   color: #2d10c0;
   font-style: italic;
+  font-size: 12px; 
 }
 
 /* Research list */
@@ -134,6 +139,7 @@ p {
   padding: 0;
   margin: 20px auto;
   max-width: 700px;
+  font-size: 12px; 
 }
 
 .education li {
@@ -143,15 +149,19 @@ p {
   margin-bottom: 12px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 6px;
+  width: 100%;
 }
 
 .degree {
   font-weight: bold;
+  flex: 1; 
 }
 
 .edu-year {
   color: gray;
   font-style: italic;
+  text-align: right;     /* push text to right */
+  min-width: 120px; 
 }
 
 .school {
