@@ -206,3 +206,62 @@ p {
 .toggle-btn:hover {
   background: #0066cc;
 }
+.top-section {
+  display: flex;
+  align-items: stretch;  /* both columns equal height */
+  gap: 20px;             /* spacing between photo and text */
+  margin: 20px;
+}
+
+.top-photo {
+  flex: 1;               /* take half the width */
+  overflow: hidden;
+}
+
+.top-photo .profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* fills column without distortion */
+  border: 4px solid #004080;
+  border-radius: 12px;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.top-info {
+  flex: 1;               /* other half of width */
+  padding: 10px;
+}
+
+.contact-footer {
+  background-color: #004080;   /* same as nav */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.contact-footer a {
+  color: #ffcc00;              /* highlight email */
+  text-decoration: none;
+}
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}
+
+.home-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* centers them horizontally */
+  gap: 12px;               /* spacing between buttons */
+  flex-wrap: wrap;         /* allows wrapping on small screens */
+}
+
+.home-links li {
+  margin: 0; /* remove vertical spacing */
+}
