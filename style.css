@@ -10,8 +10,12 @@ body {
 /* Navigation */
 nav {
   background-color: #004080;
-  padding: 12px;
+  padding: 15px 12px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 nav a {
@@ -19,6 +23,10 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;   /* Prevent text wrapping */
 }
 
 nav a:hover {
