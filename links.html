@@ -1,93 +1,267 @@
-<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Amin Shirazian | Links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card-bg: #ffffff;
+      --accent: #004080;
+      --accent-soft: #e0e7ff;
+      --text-main: #111827;
+      --text-sub: #4b5563;
+      --border: #e5e7eb;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+      --radius-card: 18px;
+      --radius-btn: 999px;
+    }
 
-      <section class="links" aria-label="Key links">
-        <a
-          class="link-button"
-          href="https://aminshz.github.io/my-website/paper1.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span class="label">Job Market Paper</span>
-          <span class="badge">PDF</span>
-        </a>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        <a
-          class="link-button"
-          href="https://aminshz.github.io/my-website/research.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span class="label">Research</span>
-          <span class="badge">Projects</span>
-        </a>
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at top, #e0f2fe 0, #f5f5f7 60%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
 
-        <a
-          class="link-button"
-          href="https://aminshz.github.io/my-website/teaching.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span class="label">Teaching</span>
-          <span class="badge">Courses</span>
-        </a>
+    /* Navigation */
+    nav {
+      background-color: #004080;
+      padding: 15px 12px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+    }
 
-        <a
-          class="link-button"
-          href="https://aminshz.github.io/my-website/resume.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span class="label">CV</span>
-          <span class="badge">Online</span>
-        </a>
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1;
+      display: inline-block;
+      white-space: nowrap;
+    }
 
-        <a
-          class="link-button"
-          href="https://github.com/aminshz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span class="label">GitHub</span>
-          <span class="badge">Code</span>
-        </a>
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-        <a
-          class="link-button"
-          href="https://www.aeaweb.org/joe/candidates/candidate_profile_view.php?jcand=jr93MdM__1rqZXL6mJLzzALipMkumQF1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span class="label">AEA JOE Candidate Profile</span>
-          <span class="badge">AEA</span>
-        </a>
+    .main-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      padding: 24px;
+    }
 
-        <a
-          class="link-button"
-          href="https://www.linkedin.com/in/amin-shirazian/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span class="label">LinkedIn</span>
-          <span class="badge">Professional</span>
-        </a>
+    .container {
+      max-width: 480px;
+      width: 100%;
+    }
 
-        <a
-          class="link-button"
-          href="https://x.com/AminShiraz14438"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span class="label">X (Twitter)</span>
-          <span class="badge">@AminShiraz14438</span>
-        </a>
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow);
+      padding: 28px 24px 24px;
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
 
-        <a
-          class="link-button"
-          href="mailto:mshirazian@torontomu.ca"
-        >
-          <span class="label">Email me</span>
-          <span class="badge">mshirazian@torontomu.ca</span>
-        </a>
-      </section>
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-<!-- ...existing code... -->
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #004080, #38bdf8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      font-size: 32px;
+      margin: 0 auto 12px;
+      box-shadow: 0 10px 25px rgba(0, 64, 128, 0.4);
+    }
+
+    .name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 4px;
+      color: #004080;
+    }
+
+    .title {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      margin-bottom: 2px;
+    }
+
+    .affiliation {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 0.82rem;
+      color: var(--text-sub);
+      line-height: 1.4;
+    }
+
+    .links {
+      margin-top: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .link-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      border-radius: var(--radius-btn);
+      border: 1px solid var(--border);
+      background: #f9fafb;
+      text-decoration: none;
+      color: var(--text-main);
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: transform 0.08s ease-out, box-shadow 0.08s ease-out,
+        background 0.08s ease-out, border-color 0.08s ease-out;
+    }
+
+    .link-button span.label {
+      flex: 1;
+      text-align: left;
+    }
+
+    .link-button span.badge {
+      font-size: 0.7rem;
+      padding: 3px 7px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(0, 64, 128, 0.3);
+      margin-left: 10px;
+      white-space: nowrap;
+    }
+
+    .link-button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.13);
+      background: #ffffff;
+      border-color: rgba(0, 64, 128, 0.6);
+    }
+
+    .link-button:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    .footer {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 0.75rem;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 24px 18px 18px;
+      }
+      .avatar {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="research.html">Research</a>
+    <a href="education.html">Education</a>
+    <a href="links.html">Links</a>
+  </nav>
+
+  <div class="main-content">
+    <div class="container">
+      <main class="card">
+        <header class="header">
+          <img src="me2.jpg" alt="Amin Shirazian" class="avatar" style="object-fit: cover;">
+          <div class="name">Amin Shirazian</div>
+          <div class="title">PhD Candidate in Economics</div>
+          <div class="affiliation">Toronto Metropolitan University</div>
+          <p class="tagline">
+            Macroeconomics, health investment, wealth inequality, and policy
+            evaluation.
+          </p>
+        </header>
+
+        <section class="links" aria-label="Key links">
+          <a
+            class="link-button"
+            href="index.html"
+          >
+            <span class="label">My Website</span>
+            <span class="badge">Home</span>
+          </a>
+
+          <a
+            class="link-button"
+            href="https://www.linkedin.com/in/amin-shirazian/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="label">LinkedIn</span>
+            <span class="badge">Professional</span>
+          </a>
+
+          <a
+            class="link-button"
+            href="https://x.com/AminShiraz14438"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="label">X (Twitter)</span>
+            <span class="badge">@AminShiraz14438</span>
+          </a>
+        </section>
+
+        <div class="footer">
+          © <span id="year"></span> Amin Shirazian
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
