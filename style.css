@@ -53,7 +53,7 @@ p {
   padding: 0;
   margin: 20px auto;
   max-width: 700px;
-  font-size: 12px; 
+  font-size: 13px;
 }
 
 .courses li {
@@ -61,18 +61,18 @@ p {
   justify-content: space-between;
   padding: 6px 0;
   border-bottom: 1px solid #ddd;
-  font-size: 12px; 
+  font-size: 13px;
 }
 
 .course-title {
   font-weight: normal;
-  font-size: 12px; 
+  font-size: 13px;
 }
 
 .course-year {
   color: #2d10c0;
   font-style: italic;
-  font-size: 12px; 
+  font-size: 13px;
 }
 
 /* Research list */
@@ -147,7 +147,7 @@ p {
   padding: 0;
   margin: 20px auto;
   max-width: 700px;
-  font-size: 12px; 
+  font-size: 13px;
 }
 
 .education li {
@@ -213,13 +213,19 @@ p {
   text-decoration: none;
   font-weight: normal;
   border-radius: 0;
-  font-size: 12px;  /* Smaller text */
+  font-size: 13px; /* Smaller text */
 }
 
 .home-links a:hover {
   background: none;
   text-decoration: underline;
   color: #0066cc;
+}
+
+.teaching-philosophy {
+  max-width: 700px;
+  margin: 0 auto 15px;
+  padding: 0 10px;
 }
 
 .toggle-btn {
