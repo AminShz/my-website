@@ -116,6 +116,12 @@ p {
   margin-right: 10px;
 }
 
+.paper-title a {
+  color: #004080;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* About section */
 .about-section {
   display: flex;

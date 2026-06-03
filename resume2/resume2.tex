@@ -1,0 +1,126 @@
+% !TEX program = xelatex
+\documentclass[10pt]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, urlcolor=linkred, linkcolor=linkred]{hyperref}
+\usepackage{fontspec}
+\usepackage{ragged2e}
+
+% ---------- Colors ----------
+\definecolor{accent}{HTML}{1A3A5A}
+\definecolor{linkred}{HTML}{8B0000}
+
+% ---------- Section formatting ----------
+\titleformat{\section}
+  {\color{accent}\large\bfseries\scshape}
+  {}{0em}{}[\vspace{2pt}\color{accent}\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% ---------- List spacing ----------
+\setlist[itemize]{leftmargin=*, topsep=3pt, itemsep=2pt, parsep=0pt}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+% ---------- Entry command: bold left, plain right ----------
+\newcommand{\entry}[2]{%
+  \textbf{#1}\hfill{#2}\par\vspace{2pt}%
+}
+
+\begin{document}
+
+% ===================== HEADER =====================
+\begin{center}
+  {\Huge\bfseries\color{accent} Amin Shirazian}\\[5pt]
+  \small
+  Department of Economics, Toronto Metropolitan University \,$\cdot$\, 350 Victoria St., Toronto, ON M5B 2K3\\[2pt]
+  (647)~686--9324 \,$\cdot$\,
+  \href{mailto:amin.shirazian.work@gmail.com}{amin.shirazian.work@gmail.com} \,$\cdot$\,
+  \href{https://aminshz.github.io/my-website}{aminshz.github.io/my-website} \,$\cdot$\,
+  \href{https://linkedin.com/in/amin-shirazian}{linkedin.com/in/amin-shirazian}
+\end{center}
+
+\vspace{6pt}
+\noindent\RaggedRight\textit{Applied economist (PhD, expected 2026) specializing in macroeconomic heterogeneity, health, and household saving, with applied work on subsidy pass-through in remote communities. Strong empirical and computational toolkit (Stata, Python, R, MATLAB, C++); experienced in structural modeling and large-scale web scraping.}
+
+% ===================== EDUCATION =====================
+\section{Education}
+
+\entry{Ph.D., Economics --- Toronto Metropolitan University}{Expected 2026}
+\textit{Dissertation:} Marginal Utility Shocks and the Precautionary Saving Puzzle \,$\cdot$\,
+\textit{Advisor:} Keyvan Eslami \,$\cdot$\, GPA 4.17/4.33
+
+\vspace{4pt}
+\entry{M.A., Economics --- Tehran Institute for Advanced Studies}{2020}
+\entry{B.A., Economics --- University of Tehran}{2018}
+
+% ===================== RESEARCH =====================
+\section{Research}
+
+\begin{itemize}
+  \item \href{https://aminshz.github.io/my-website/paper1.pdf}{\textbf{Marginal Utility Shocks and the Precautionary Saving Puzzle}} \textit{(Job Market Paper)} ---
+    Develops and calibrates a structural model linking health, longevity, and saving decisions to the HRS;
+    informs retirement security and late-life wealth distribution.
+
+  \item \href{https://aminshz.github.io/my-website/paper2.pdf}{\textbf{Imputing Total Medical Expenditure and the Medical Spending--Wealth Gradient}} \textit{(working paper)} ---
+    Imputes total medical spending in the HRS using MEPS; provides formal results on estimator consistency
+    and documents a sharp dip in spending among middle-wealth households.
+
+  \item \textbf{Online Innovation, Market Entry and Competition in Remote Indigenous Communities}
+    (with Y.~Mudathir and N.~Li, \textit{in progress}) ---
+    Examines subsidy pass-through, firm entry, and household welfare in remote communities using an
+    original dataset built from large-scale web scraping.
+\end{itemize}
+
+% ===================== EXPERIENCE =====================
+\section{Research \& Professional Experience}
+
+\entry{Research Assistant --- Toronto Metropolitan University}{2022--present}
+\begin{itemize}
+  \item Built datasets via web scraping, conducted econometric analysis, and developed structural and
+    computational models supporting ongoing research.
+\end{itemize}
+
+\vspace{4pt}
+\entry{Research Assistant --- University of Toronto}{Summer 2023}
+\begin{itemize}
+  \item Constructed research datasets through automated web scraping and data collection.
+\end{itemize}
+
+\vspace{4pt}
+\entry{Research Assistant --- Tehran Institute for Advanced Studies}{2018--2020}
+\begin{itemize}
+  \item Empirical analysis, structural modeling, and dataset construction for academic research projects.
+\end{itemize}
+
+% ===================== SKILLS =====================
+\section{Technical Skills}
+
+\noindent\textbf{Statistical / data:} Stata, R, Python (Selenium, BeautifulSoup) \,$\cdot$\,
+\textbf{Computational:} MATLAB, C++ \,$\cdot$\,
+\textbf{Other:} \LaTeX{}, Git, HTML/CSS \,$\cdot$\,
+\textbf{Languages:} English (fluent), Persian (native)
+
+% ===================== TEACHING =====================
+\section{Teaching}
+
+\noindent\textbf{Contract Lecturer}, TMU (2024--present) \hfill
+Intermediate Macroeconomics I (×3), Introductory Macroeconomics, Economic Issues in Globalization (×2)
+
+\vspace{4pt}
+\noindent\textbf{Graduate Teaching Assistant}, TMU (2021--2025) \hfill
+13 courses across PhD, MA, and undergraduate levels in macro, micro, and mathematical economics
+
+% ===================== LEADERSHIP & AWARDS =====================
+\section{Leadership \& Awards}
+\noindent President \& Vice-President, Economics Graduate Students Association, TMU (2021--2024) \,$\cdot$\,
+Graduate Assistant Recognition Award (2022, 2023) \,$\cdot$\,
+Top Second-Year PhD Student (2021).
+
+\vspace{6pt}
+\begin{center}\small\textit{References available on request.}\end{center}
+
+\end{document}
