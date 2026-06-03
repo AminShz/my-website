@@ -1,224 +1,228 @@
-\documentclass[12pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[legalpaper,margin=1in]{geometry}
-\usepackage{setspace}
-\usepackage{hyperref}
-\usepackage{multirow}
+% !TEX program = xelatex
+\documentclass[11pt]{article}
+
+% ---------- Packages ----------
+\usepackage[legalpaper, margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
 \usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{ragged2e}
+\usepackage{setspace}
 \setstretch{1.1}
 
+% ---------- Colors ----------
+\definecolor{accent}{HTML}{1A3A5A}
+\definecolor{linkblue}{HTML}{004080}
+
+% ---------- Hyperref ----------
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+
+% ---------- Section formatting ----------
+\titleformat{\section}
+  {\color{accent}\large\bfseries\scshape}
+  {}{0em}{}[\vspace{2pt}\color{accent}\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+% ---------- List spacing ----------
+\setlist[itemize]{leftmargin=*, topsep=3pt, itemsep=2pt, parsep=0pt}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+% ---------- Entry command ----------
+\newcommand{\entry}[2]{%
+  \textbf{#1}\hfill{#2}\par\vspace{2pt}%
+}
+
 \begin{document}
-	
-	%------------------------------------------------------------
-	% HEADER (Placement Office Block)
-	%------------------------------------------------------------
-	\begin{tabular}{l p{50pt} l}
-		\noindent
-		\textbf{Toronto Metropolitan University -- Toronto}&& \\
-		Department of Economics & &Placement Director:\\
-		\noindent 350 Victoria Street, & & Keyvan Eslami\\
-		Toronto, ON M5B 2K3& & (416) 979-5000 \\
-		Canada & & k.eslami@torontomu.ca \\[10pt]
-		& & Placement Coordinator: \\
-		& & Karen Fajardo \\
-		& & kfajardo@torontomu.ca \\[10pt]
-		&&	{\large \textbf{Curriculum Vitae}} \\
-		&&\textbf{Spring 2026}
-	\end{tabular}
-	
-	
-	
-	\begin{center}
-		{\Large \textbf{Amin Shirazian}}\\[4pt]
-        \href{https://aminshz.github.io/my-website/resume.html}{\small \textit{\textcolor{blue}{link to latest version}}}
-	\end{center}
-	
-	\vspace{1em}
-	
-	%------------------------------------------------------------
-	% PERSONAL DATA
-	%------------------------------------------------------------
-	
-	\noindent \textbf{Personal Data} \\[4pt]
-	\begin{tabular}{lp{20pt}p{250pt}}
-	
-	\textit{Address} & & \textit{Contact Information} \\
-	Department of Economics & & Cell: (647) 686--9324\\	
-	Toronto Metropolitan University & & Email: \href{mailto:amin.shirazian.work@gmail.com}{amin.shirazian.work@gmail.com} \\
-	350 Victoria Street, Toronto, ON M5B 2K3 & & {Website: \href{https://aminshz.github.io/my-website}{https://aminshz.github.io/my-website} } \\
-	&& LinkedIn: \href{https://linkedin.com/in/amin-shirazian}{linkedin.com/in/amin-shirazian}\\
-	\end{tabular}
-	
-	\vspace*{20pt}
-	
-	\noindent
-	Citizenship: Iran / Canada (S1 Visa, Open Work Permit \& Study Permit)
-	
-	\vspace{1em}
-	
-	%------------------------------------------------------------
-	% MAJOR FIELDS
-	%------------------------------------------------------------
-	\noindent
-	\textbf{Major Fields of Concentration} \\[4pt]
-	Macroeconomics, Heterogeneous-Agent Models, Policy Analysis, Health Economics
-	
-	\vspace{1em}
-	
-	%------------------------------------------------------------
-	% EDUCATION
-	%------------------------------------------------------------
-	\noindent
-	\textbf{Education}
-	\begin{flushleft}
-		\begin{tabular}{llll}
-			\textit{Degree}  & \textit{Field} & \textit{Institution} & \textit{Year} \\
-			Ph.D. (GPA: 4.17/4.33) & Economics  & Toronto Metropolitan University & 2026 \\
-			M.A. (GPA: 4.00/4.33) & {Economics}& Tehran Institute for Advanced Studies & 2020 \\
-			B.A. (GPA: 3.14/4.33) & {Economics} & Tehran University & 2018 \\
-		\end{tabular}
-	\end{flushleft}
-	
-	\noindent 
-	\textbf{Dissertation:} \\
-	Title: \textit{``Marginal Utility Shocks and the Precautionary Saving Puzzle''} \\
-	Dissertation Advisor: Professor Keyvan Eslami\\
-	Expected Completion: Summer 2026  \\[6pt]
-	\vspace{1em}
-	
-	%------------------------------------------------------------
-	% REFERENCES
-	%------------------------------------------------------------
-	\noindent
-	\textbf{References}
-	\begin{flushleft}
-		\begin{tabular}{p{7cm} p{7cm}}
-			\textbf{Keyvan Eslami} & \textbf{Claustre Bajona } \\
-			Department of Economics & Department of Economics \\
-			Toronto Metropolitan University & Toronto Metropolitan University \\
-			\href{k.eslami@torontomu.ca}{k.eslami@torontomu.ca} & \href{mailto:cbajona@torontomu.ca}{cbajona@torontomu.ca}\\
-			& \\[10pt]
-			
-			\textbf{Kevin Fawcett} & \textbf{Haomiao Yu} \\
-			Department of Economics & Department of Economics \\
-			Toronto Metropolitan University & Toronto Metropolitan University \\
-			\href{mailto:fawcettk@torontomu.ca}{fawcettk@torontomu.ca} & \href{mailto:haomiao@torontomu.ca}{haomiao@torontomu.ca}
-		\end{tabular}
-	\end{flushleft}
-	
-	\vspace{1em}
-	
-	%------------------------------------------------------------
-	% HONORS AND AWARDS
-	%------------------------------------------------------------
-	\pagebreak
-    \noindent
-	\textbf{Honors and Awards} \\[6pt]
-	\begin{tabular}{p{2.5cm} p{15cm}}
-		2017 - 2026 & Full Graduate Scholarship: Ph.D. / M.A. \\
-		2022 - 2023 & Graduate Assistant Recognition Award, Toronto Metropolitan University 
-		\\ 2021 & Top Second-Year PhD Student, Toronto Metropolitan University\\
-	\end{tabular}
-	
-	\vspace{1em}
-	
-	%------------------------------------------------------------
-	% TEACHING EXPERIENCE
-	%------------------------------------------------------------
-	\noindent
-	\textbf{Teaching Experience} \\[4pt]
-	\begin{tabular}{p{2.5cm}p{15cm}}
-		\noindent Summer 2024 -- Present & {Contract Lecturer},  Department of Economics, Toronto Metropolitan University, Taught \textit{Intermediate Macroeconomics I} (×3), \textit{Introductory Macroeconomics}, \textit{Economic Issues in Globalization} (×2) \\
-		
-		\noindent { January 2021 -- Present} &  { Teaching Assistant},  Department of Economics,Toronto Metropolitan University, Taught \textit{ Adv. Macroeconomics I, Mathematical Economics, Advanced Microeconomics ll}, led PhD Tutorials  \\
-		{{\small January 2018 -- January 2020}} & {Teaching Assistant},  \textit{Advanced Macroeconomics, Tehran Institute for Advanced Studies, Khatam University, Advanced Financial Economics}, led MA tutorials
-	\end{tabular}
 
-	\vspace{1em}
-	
-	%------------------------------------------------------------
-	% RESEARCH EXPERIENCE
-	%------------------------------------------------------------
-	\noindent
-	\textbf{Research Experience} \\[4pt]
-	\begin{tabular}{p{2.5cm}p{15cm}}
-		2022--Present & Research Assistant, Department of Economics, Toronto Metropolitan University \\
-		Summer 2023 & Research Assistant, Department of Economics, University of Toronto \\
-		2018--2020 & Research Assistant, TeIAS, Tehran, Iran, Research Assistant to Professor Hagh-Panah  \\
-	\end{tabular}
-	
+% ===================== PLACEMENT HEADER =====================
+\begin{tabular}{l p{50pt} l}
+  \textbf{Toronto Metropolitan University -- Toronto} && \\
+  Department of Economics && Placement Director: \\
+  350 Victoria Street, && Keyvan Eslami \\
+  Toronto, ON M5B 2K3 && (416) 979-5000 \\
+  Canada && k.eslami@torontomu.ca \\[10pt]
+  && Placement Coordinator: \\
+  && Karen Fajardo \\
+  && kfajardo@torontomu.ca \\[10pt]
+  && {\large \textbf{Curriculum Vitae}} \\
+  && \textbf{Spring 2026}
+\end{tabular}
 
-	
-	\vspace{1em}
-	
-	%------------------------------------------------------------
-	% PROFESSIONAL EXPERIENCE
-	%------------------------------------------------------------
-	\noindent
-	\textbf{Professional Experience}\\[4pt]
-	\begin{tabular}{p{2.5cm}p{15cm}}
-		2023 - 2024  & \textit{VP education}, Economics Graduate Students Association, Toronto Metropolitan University \\
-		2022 - 2023  & \textit{VP communication}, Economics Graduate Students Association, Toronto Metropolitan University \\
-		2021 - 2022  & \textit{President}, Economics Graduate Students Association, Toronto Metropolitan University \\ 
-		2021 - 2022  & \textit{Director}, Graduate Students Union, Toronto Metropolitan University \\ 
-		2014 - 2015 & \textit{Director}, Students Union,  University of Tehran,  Iran, Tehran, Faculty of Economics \\
-	\end{tabular}
+\vspace{1em}
 
-	\vspace{1em}
-	
-	%------------------------------------------------------------
-	% PAPERS
-	%------------------------------------------------------------
-	\noindent
-	\textbf{Papers} 
-	\begin{flushleft}
-		Shirazian, A. \textit{``Marginal Utility Shocks and the Precautionary Saving Puzzle''}, Job Market Paper (\href{https://aminshz.github.io/my-website/paper1.pdf}{pdf link}).   \\[4pt]
-        Shirazian, A. \textit{``Online innovation, market entry and competition in remote Indigenous communities''}, with Yasir Mudathir and Nicholas Li, in progress.   \\[4pt]
-		Shirazian, A. \textit{``Imputing Health Expenditure in HRS and MEPS Data''}(\href{https://aminshz.github.io/my-website/paper2.pdf}{pdf link}). \\[4pt]
-		Shirazian, A. \textit{``Women Live Longer: Retirement Saving Puzzle''}, Masters Thesis.
-        
-	\end{flushleft}
-	
-	\vspace{1em}
-	 
-	%------------------------------------------------------------
-	% COMPUTER SKILLS
-	%------------------------------------------------------------
-	\noindent
-	\textbf{Computer Skills} \\
-	\LaTeX, Stata, Python, MATLAB, C++, R, HTML/CSS, Git, Data Scraping (Selenium, BeautifulSoup)
-	
-	\vspace{1em}
-	
-	%------------------------------------------------------------
-	% LANGUAGES
-	%------------------------------------------------------------
-	\noindent
-	\textbf{Languages} \\
-	English (fluent), Persian (native)
-	
-	\vspace{1em}
+\begin{center}
+  {\Large \textbf{Amin Shirazian}}\\[4pt]
+  \href{https://aminshz.github.io/my-website/resume.html}{\small\textit{\textcolor{linkblue}{link to latest version}}}
+\end{center}
 
-    \newpage
-	%------------------------------------------------------------
-	% ABSTRACTS (Empty)
-	%------------------------------------------------------------
-	\noindent
-	\textbf{Abstract(s)}\\[4pt]
-	Shirazian, A. ``Marginal Utility Shocks and the Precautionary Saving Puzzle'', Job Market Paper. \\[4pt]
-	\textit{This paper studies the effect of shocks to the continuation value of consumption (health shocks) on saving decisions. Using an income fluctuation model with a luxury good that endogenously determines the discounted value of all future consumption (health), I show that even at top percentiles of wealth, individuals may opt to save if the decline in marginal utility of consumption, due to low health, in future periods is sufficiently large. This result shows that the sufficient condition for saving to increase at top deciles of wealth is the greater curvature of the marginal utility compared to the curvature of the marginal product of health spending (in the health production function), which makes health a luxury. Finally, I calibrate the model to explain the observed saving pattern in Health and Retirement Study (HRS).} \\[4pt]
-	\\
-	
-	\noindent Shirazian, A. ``Imputing Health Expenditure in HRS and MEPS Data'', In Progress. \\[4pt]
-	\textit{This paper imputes total medical spending for the Health and Retirement Survey (HRS) using the Medical Expenditure Survey (MEPS) and discusses moment consistency of the imputated health expenditure. The main theorem proves that, under classical assumptions, OLS estimates remain consistent when using the imputed dependent variable.} \\[4pt]
-	
-	\noindent
-	Shirazian, A. ``Women Live Longer: Retirement Saving Puzzle'', MA Thesis.\\[4pt]
-	\textit{This paper presents an explanation to the excess sensitivity of consumption to the
-	drop in income around retirement, known as the ``retirement saving Puzzle.'' We confirm this empirical puzzle also prevails among Iranian families. That is, an unpredicted drop occurs in households’ non-durable expenditures around the age of 65, which cannot be resolved even by decomposing household heads according to their labor status. Then, by taking into account the diversity in the gender composition of cohorts, we demonstrate that the gap between predicted and actual non-durable expenditures is no longer apparent.}
+\vspace{0.5em}
 
-	
-	\vfill
+% ===================== PERSONAL DATA =====================
+\section{Personal Data}
 
-	
+\begin{tabular}{l p{20pt} p{250pt}}
+  \textit{Address} && \textit{Contact Information} \\
+  Department of Economics && Cell: (647) 686--9324 \\
+  Toronto Metropolitan University && Email: \href{mailto:amin.shirazian.work@gmail.com}{amin.shirazian.work@gmail.com} \\
+  350 Victoria Street, Toronto, ON M5B 2K3 && Website: \href{https://aminshz.github.io/my-website}{aminshz.github.io/my-website} \\
+  && LinkedIn: \href{https://linkedin.com/in/amin-shirazian}{linkedin.com/in/amin-shirazian} \\
+\end{tabular}
+
+\vspace{0.5em}
+\noindent Citizenship: Iran / Canada (S1 Visa, Open Work Permit \& Study Permit)
+
+% ===================== MAJOR FIELDS =====================
+\section{Major Fields of Concentration}
+
+Macroeconomics, Heterogeneous-Agent Models, Policy Analysis, Health Economics
+
+% ===================== EDUCATION =====================
+\section{Education}
+
+\begin{tabular}{llll}
+  \textit{Degree} & \textit{Field} & \textit{Institution} & \textit{Year} \\
+  Ph.D. (GPA: 4.17/4.33) & Economics & Toronto Metropolitan University & 2026 \\
+  M.A. (GPA: 4.00/4.33) & Economics & Tehran Institute for Advanced Studies & 2020 \\
+  B.A. (GPA: 3.14/4.33) & Economics & Tehran University & 2018 \\
+\end{tabular}
+
+\vspace{0.5em}
+\noindent\textbf{Dissertation:}\\
+Title: \textit{``Marginal Utility Shocks and the Precautionary Saving Puzzle''}\\
+Advisor: Professor Keyvan Eslami\\
+Expected Completion: Summer 2026
+
+% ===================== REFERENCES =====================
+\section{References}
+
+\begin{tabular}{p{7cm} p{7cm}}
+  \textbf{Keyvan Eslami} & \textbf{Claustre Bajona} \\
+  Department of Economics & Department of Economics \\
+  Toronto Metropolitan University & Toronto Metropolitan University \\
+  \href{mailto:k.eslami@torontomu.ca}{k.eslami@torontomu.ca} & \href{mailto:cbajona@torontomu.ca}{cbajona@torontomu.ca} \\[10pt]
+
+  \textbf{Kevin Fawcett} & \textbf{Haomiao Yu} \\
+  Department of Economics & Department of Economics \\
+  Toronto Metropolitan University & Toronto Metropolitan University \\
+  \href{mailto:fawcettk@torontomu.ca}{fawcettk@torontomu.ca} & \href{mailto:haomiao@torontomu.ca}{haomiao@torontomu.ca} \\
+\end{tabular}
+
+\pagebreak
+
+% ===================== HONORS AND AWARDS =====================
+\section{Honors and Awards}
+
+\begin{tabular}{p{2.5cm} p{15cm}}
+  2017--2026 & Full Graduate Scholarship: Ph.D.\ / M.A. \\
+  2022--2023 & Graduate Assistant Recognition Award, Toronto Metropolitan University \\
+  2021 & Top Second-Year PhD Student, Toronto Metropolitan University \\
+\end{tabular}
+
+% ===================== TEACHING =====================
+\section{Teaching Experience}
+
+\begin{tabular}{p{2.5cm} p{15cm}}
+  Summer 2024 -- Present &
+    \textbf{Contract Lecturer}, Department of Economics, Toronto Metropolitan University.
+    Taught \textit{Intermediate Macroeconomics I} (×3), \textit{Introductory Macroeconomics},
+    \textit{Economic Issues in Globalization} (×2) \\[6pt]
+
+  January 2021 -- Present &
+    \textbf{Teaching Assistant}, Department of Economics, Toronto Metropolitan University.
+    Taught \textit{Adv.\ Macroeconomics I}, \textit{Mathematical Economics},
+    \textit{Advanced Microeconomics II}; led PhD tutorials \\[6pt]
+
+  January 2018 -- January 2020 &
+    \textbf{Teaching Assistant}, Tehran Institute for Advanced Studies / Khatam University.
+    Taught \textit{Advanced Macroeconomics}, \textit{Advanced Financial Economics}; led MA tutorials \\
+\end{tabular}
+
+% ===================== RESEARCH EXPERIENCE =====================
+\section{Research Experience}
+
+\begin{tabular}{p{2.5cm} p{15cm}}
+  2022--Present & Research Assistant, Department of Economics, Toronto Metropolitan University \\[4pt]
+  Summer 2023   & Research Assistant, Department of Economics, University of Toronto \\[4pt]
+  2018--2020    & Research Assistant, TeIAS, Tehran, Iran (Prof.\ Hagh-Panah) \\
+\end{tabular}
+
+% ===================== PROFESSIONAL EXPERIENCE =====================
+\section{Professional Experience}
+
+\begin{tabular}{p{2.5cm} p{15cm}}
+  2023--2024 & \textit{VP Education}, Economics Graduate Students Association, Toronto Metropolitan University \\[4pt]
+  2022--2023 & \textit{VP Communication}, Economics Graduate Students Association, Toronto Metropolitan University \\[4pt]
+  2021--2022 & \textit{President}, Economics Graduate Students Association, Toronto Metropolitan University \\[4pt]
+  2021--2022 & \textit{Director}, Graduate Students Union, Toronto Metropolitan University \\[4pt]
+  2014--2015 & \textit{Director}, Students Union, University of Tehran, Faculty of Economics \\
+\end{tabular}
+
+% ===================== PAPERS =====================
+\section{Papers}
+
+\begin{itemize}
+  \item Shirazian, A. \textit{``Marginal Utility Shocks and the Precautionary Saving Puzzle''}, Job Market Paper
+    (\href{https://aminshz.github.io/my-website/paper1.pdf}{pdf}).
+
+  \item Shirazian, A. \textit{``Imputing Health Expenditure in HRS and MEPS Data''}
+    (\href{https://aminshz.github.io/my-website/paper2.pdf}{pdf}).
+
+  \item Shirazian, A. \textit{``Online Innovation, Market Entry and Competition in Remote Indigenous Communities''},
+    with Yasir Mudathir and Nicholas Li, \textit{in progress}.
+
+  \item Shirazian, A. \textit{``Women Live Longer: Retirement Saving Puzzle''}, Masters Thesis.
+\end{itemize}
+
+% ===================== COMPUTER SKILLS =====================
+\section{Computer Skills}
+
+\noindent\textbf{Statistical / data:} Stata, R, Python (Selenium, BeautifulSoup) \,$\cdot$\,
+\textbf{Computational:} MATLAB, C++ \,$\cdot$\,
+\textbf{Other:} \LaTeX{}, Git, HTML/CSS
+
+% ===================== LANGUAGES =====================
+\section{Languages}
+
+English (fluent), Persian (native)
+
+\newpage
+
+% ===================== ABSTRACTS =====================
+\section{Abstracts}
+
+\entry{Marginal Utility Shocks and the Precautionary Saving Puzzle}{Job Market Paper}
+\textit{This paper studies the effect of shocks to the continuation value of consumption (health shocks) on
+saving decisions. Using an income fluctuation model with a luxury good that endogenously determines the
+discounted value of all future consumption (health), I show that even at top percentiles of wealth,
+individuals may opt to save if the decline in marginal utility of consumption, due to low health, in
+future periods is sufficiently large. This result shows that the sufficient condition for saving to
+increase at top deciles of wealth is the greater curvature of the marginal utility compared to the
+curvature of the marginal product of health spending (in the health production function), which makes
+health a luxury. Finally, I calibrate the model to explain the observed saving pattern in the Health and
+Retirement Study (HRS).}
+
+\vspace{1em}
+
+\entry{Imputing Health Expenditure in HRS and MEPS Data}{In Progress}
+\textit{This paper imputes total medical spending for the Health and Retirement Survey (HRS) using the
+Medical Expenditure Survey (MEPS) and discusses moment consistency of the imputed health expenditure.
+The main theorem proves that, under classical assumptions, OLS estimates remain consistent when using
+the imputed dependent variable.}
+
+\vspace{1em}
+
+\entry{Women Live Longer: Retirement Saving Puzzle}{MA Thesis}
+\textit{This paper presents an explanation to the excess sensitivity of consumption to the drop in income
+around retirement, known as the ``retirement saving puzzle.'' We confirm this empirical puzzle also
+prevails among Iranian families. That is, an unpredicted drop occurs in households' non-durable
+expenditures around the age of 65, which cannot be resolved even by decomposing household heads
+according to their labor status. Then, by taking into account the diversity in the gender composition
+of cohorts, we demonstrate that the gap between predicted and actual non-durable expenditures is no
+longer apparent.}
+
+\vfill
+
 \end{document}
