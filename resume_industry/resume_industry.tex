@@ -1,0 +1,138 @@
+% Amin Shirazian — Economic Consulting Resume
+% Compile with: pdflatex resume_industry.tex
+\documentclass[10pt]{article}
+
+\usepackage[a4paper,margin=1.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{array}
+
+% ---- Fonts (pdfLaTeX-native) ----
+\usepackage{tgpagella}                 % body serif  (TeX Gyre Pagella)
+\usepackage{tgheros}                   % sans family (TeX Gyre Heros, family code qhv)
+\newcommand{\headingfont}{\fontfamily{qhv}\selectfont} % switch to Heros for headings/name
+
+% ---- Colors ----
+\definecolor{ink}{HTML}{1A1A1A}
+\definecolor{accent}{HTML}{1F3A5F}   % deep navy
+\definecolor{rulecol}{HTML}{B8C2CC}
+\definecolor{linkred}{HTML}{8B0000}   % dark red link color
+\color{ink}
+
+\hypersetup{colorlinks=true, urlcolor=linkred, linkcolor=linkred}
+
+% ---- Spacing ----
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.0}
+
+% ---- Section header style ----
+\titleformat{\section}
+  {\headingfont\bfseries\fontsize{10.5}{12}\selectfont\color{accent}\scshape}
+  {}{0em}{}[\vspace{1pt}{\color{rulecol}\titlerule[0.8pt]}\vspace{2pt}]
+\titlespacing*{\section}{0pt}{5pt}{2.5pt}
+
+% ---- Compact lists ----
+\setlist[itemize]{leftmargin=1.1em, topsep=1pt, itemsep=1.2pt, parsep=0pt, label=\textcolor{accent}{\small\textbullet}}
+
+% ---- Helper for entry headers: title (left, bold) + dates (right, italic) ----
+\newcommand{\entry}[2]{%
+  \noindent\textbf{#1}\hfill{\small\itshape #2}\par\vspace{1pt}}
+\newcommand{\subentry}[1]{\noindent\textit{#1}\par\vspace{1pt}}
+
+\begin{document}
+
+% ===================== HEADER =====================
+{\headingfont\bfseries\fontsize{22}{24}\selectfont\color{accent} Amin Shirazian}\\[3pt]
+{\headingfont\small
+\href{mailto:amin.shirazian.work@gmail.com}{amin.shirazian.work@gmail.com} \quad\textbar\quad
+(647) 686--9324 \quad\textbar\quad
+Toronto, ON \\[2pt]
+\href{https://aminshz.github.io/my-website}{aminshz.github.io/my-website} \quad\textbar\quad
+\href{https://linkedin.com/in/amin-shirazian}{linkedin.com/in/amin-shirazian} 
+}
+
+
+% ===================== SUMMARY =====================
+\section*{Summary}
+
+\vspace{-1pt}
+{\small Economics PhD candidate with 5+ years of research experience, specializing in applied econometric and structural modeling of large micro-datasets. Strengths in causal and quantitative analysis, missing-data and survey methods, and translating technical findings into decision-ready conclusions. Skilled in Stata, R, Python, MATLAB, and C++.}
+
+% ===================== EDUCATION =====================
+\section{Education}
+\entry{Ph.D., Economics — Toronto Metropolitan University}{Expected Summer 2026}
+\subentry{GPA 4.17/4.33 \,\textbar\, Fields: Macroeconomics, Heterogeneous-Agent Models, Policy \& Health Economics}
+\vspace{-1pt}
+{\small Dissertation: \textit{Marginal Utility Shocks and the Precautionary Saving Puzzle} (Advisor: K.\ Eslami)}
+\vspace{2pt}
+
+\entry{M.A., Economics — Tehran Institute for Advanced Studies}{2020}
+\subentry{GPA 4.00/4.33}
+\vspace{2pt}
+
+\entry{B.A., Economics — University of Tehran}{2018}
+
+% ===================== TECHNICAL SKILLS =====================
+\section{Technical Skills}
+{\small
+\textbf{Statistical / data:}\, Python, Stata, R (Statistical analysis) \\[1.5pt]
+\textbf{Computational / modeling:}\, MATLAB, C++ (numerical optimization, structural model solution) \\[2pt]
+\textbf{Other:}\, \LaTeX, Git, HTML/CSS \\[1.5pt]
+\textbf{Methods:}\, Nonlinear \& OLS estimation, dynamic optimization, calibration, missing-data imputation, survey microdata (HRS, MEPS)
+}
+
+% ===================== SELECTED PROJECTS =====================
+\section{Selected Quantitative \& Research Projects}
+\entry{\href{https://aminshz.github.io/my-website/paper1.pdf}{Structural Modeling of Household Financial Behavior} — Job Market Paper}{2022--Present}
+\begin{itemize}
+\item Built and calibrated a heterogeneous-agent structural model of household saving to U.S. Health and Retirement Study (HRS) microdata; solved the dynamic optimization problem numerically in C++/Python.
+\item Identified a health-driven mechanism explaining saving behavior across the full wealth distribution, reconciling model output with observed patterns where standard models fail.
+\item Estimated a nonlinear health-production function via NLS on 4{,}600+ survey respondents (HRS waves 8--13); validated results with robustness checks across parameter confidence intervals.
+\end{itemize}
+
+\entry{\href{https://aminshz.github.io/my-website/paper2.pdf}{Imputing Total Medical Expenditure and the Medical Spending--Wealth Gradient} — Second Paper}{2022--Present}
+\begin{itemize}
+\item Designed an imputation pipeline linking two national health surveys to recover total medical spending for records where it is unobserved. Theoretically proved and empirically verified the consistency of the imputations.
+\end{itemize}
+
+\entry{Competition \& Market Entry in Remote Communities (with N.\ Li, Y.\ Mudathir)}{In Progress}
+\begin{itemize}
+\item Analyzing how online market entry reshapes pricing and competition in remote Indigenous communities; directly relevant to broadband access and northern-subsidy policy.
+\end{itemize}
+
+% ===================== EXPERIENCE =====================
+\section{Professional \& Teaching Experience}
+\entry{Contract Lecturer \& Teaching Assistant — Toronto Metropolitan University}{2021--Present}
+\begin{itemize}
+\item Designed and delivered lectures for seven course sections (Intermediate/Introductory Macroeconomics, Globalization) to hundreds of students; distilled complex quantitative material for non-specialist audiences.
+\item TA for graduate and advanced courses (Adv.\ Macroeconomics, Mathematical Economics, Adv.\ Microeconomics).
+\end{itemize}
+
+\entry{Research Assistant — 5+ Years Continuous}{2018--Present}
+\subentry{Toronto Metropolitan University (2020--Present) \,\textbar\, University of Toronto (Summer 2023) \,\textbar\, TeIAS, Tehran — Prof.\ Hagh-Panah (2018--2020)}
+\begin{itemize}
+\item Conducted empirical and computational research across health and macro projects; built and maintained reproducible data and estimation workflows.
+\end{itemize}
+
+% ===================== LEADERSHIP =====================
+\section{Leadership}
+{\small
+\textbf{President}, Economics Graduate Students Association, TMU (2021--22); \textbf{VP Education} (2023--24) \& \textbf{VP Communication} (2022--23) \\ \textbf{Director}, Graduate Students Union, TMU (2021--22) \\ \textbf{Director}, Students Union, University of Tehran (2014--15). 
+\begin{itemize}
+\item Led teams, organized events, and represented graduate students to faculty and administration.
+\end{itemize}
+}
+
+% ===================== HONORS & LANGUAGES =====================
+\section{Honors \& Languages}
+{\small
+\textbf{Full Graduate Scholarship} (Ph.D./M.A., 2018--2026) \\[2pt] \textbf{Graduate Assistant Recognition Award}, TMU (2022--23) \,\textbar\, \textbf{Top Second-Year PhD Student}, TMU (2021) \\[2pt]
+\textbf{Languages:}\, English (fluent), Persian (native)
+}
+
+\end{document}
