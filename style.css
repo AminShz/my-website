@@ -9,6 +9,7 @@ body {
 
 /* Navigation */
 nav {
+  position: relative;
   background-color: #004080;
   padding: 15px 12px;
   text-align: center;
@@ -314,4 +315,114 @@ p {
 
 .contact-footer a:hover {
   text-decoration: underline;
+}
+
+/* Theme toggle button (injected into nav by theme.js) — pinned far right */
+.theme-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ===================== Dark mode (manual toggle) ===================== */
+.dark body {
+  background-color: #14181f;
+  color: #cdd6e0;
+}
+
+/* Headings + accents shift from royal blue to a brighter cyan/teal */
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: #5ad1e6;
+}
+
+.dark p,
+.dark .bio {
+  color: #cdd6e0;
+}
+
+/* Nav and footer: deep teal instead of royal blue */
+.dark nav,
+.dark .contact-footer {
+  background-color: #0a2a33;
+}
+
+.dark nav a {
+  color: #e6f6fa;
+}
+
+.dark .contact-footer a {
+  color: #ffd24d;
+}
+
+/* List separators */
+.dark .courses li,
+.dark .research-list li,
+.dark .education li {
+  border-bottom-color: #2c3440;
+}
+
+.dark .course-year {
+  color: #7fd8c4;
+}
+
+.dark .school {
+  color: #9aa6b2;
+}
+
+.dark .edu-year,
+.dark .research-year a {
+  color: #8a94a0;
+}
+
+.dark .research-year a:hover {
+  color: #5ad1e6;
+}
+
+/* Cards / panels */
+.dark .about-card {
+  background-color: #1d232c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.dark .top-photo .profile-pic {
+  background-color: #2a2f38;
+}
+
+/* Links */
+.dark .paper-title a,
+.dark .home-links a {
+  color: #5ad1e6;
+}
+
+.dark .home-links li::before {
+  color: #5ad1e6;
+}
+
+.dark .home-links a:hover {
+  color: #9af0ff;
+}
+
+/* Buttons defined with the brand blue */
+.dark .toggle-btn {
+  background: #0a2a33;
+}
+
+.dark .toggle-btn:hover {
+  background: #0f3a47;
 }
