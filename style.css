@@ -679,6 +679,21 @@ p {
   line-height: 1.85;
 }
 
+.home-intro .research-statement-prompt {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.research-statement-prompt a {
+  color: #805b25;
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
+.research-statement-prompt a:hover {
+  color: #a8762e;
+}
+
 .home-page .home-footer {
   margin-top: 0;
   padding: 28px 20px;
@@ -706,6 +721,10 @@ p {
 
 .dark .home-intro p {
   color: #d3d8dc;
+}
+
+.dark .research-statement-prompt a {
+  color: #e4c07e;
 }
 
 @media (max-width: 900px) {
