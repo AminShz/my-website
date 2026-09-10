@@ -763,8 +763,6 @@ p {
 
   .home-hero {
     min-height: 720px;
-    background-position: center 57%;
-    background-size: auto 215%;
   }
 
   .hero-portrait {
@@ -1220,11 +1218,6 @@ p {
 
   .interior-page .home-nav a {
     font-size: 15px;
-  }
-
-  .interior-page .theme-toggle {
-    right: 18px;
-    top: 28px;
   }
 
   .cv-grid {
