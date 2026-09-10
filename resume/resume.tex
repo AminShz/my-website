@@ -2,7 +2,7 @@
 \documentclass[11pt]{article}
 
 % ---------- Packages ----------
-\usepackage[legalpaper, margin=1in]{geometry}
+\usepackage[letterpaper, margin=1in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{xcolor}
@@ -10,6 +10,7 @@
 \usepackage{fontspec}
 \usepackage{ragged2e}
 \usepackage{setspace}
+\usepackage{fontawesome5}
 \setstretch{1.1}
 
 % ---------- Colors ----------
@@ -21,8 +22,8 @@
 
 % ---------- Section formatting ----------
 \titleformat{\section}
-  {\color{accent}\large\bfseries\scshape}
-  {}{0em}{}[\vspace{2pt}\color{accent}\titlerule]
+  {\color{black}\large\bfseries}
+  {}{0em}{\raisebox{0.2ex}{\rule{0.9in}{6pt}}\hspace{0.7em}}
 \titlespacing{\section}{0pt}{10pt}{5pt}
 
 % ---------- List spacing ----------
@@ -37,63 +38,36 @@
 
 \begin{document}
 
-% ===================== PLACEMENT HEADER =====================
-\begin{tabular}{l p{50pt} l}
-  \textbf{Toronto Metropolitan University -- Toronto} && \\
-  Department of Economics && Placement Director: \\
-  350 Victoria Street, && Keyvan Eslami \\
-  Toronto, ON M5B 2K3 && (416) 979-5000 \\
-  Canada && k.eslami@torontomu.ca \\[10pt]
-  && Placement Coordinator: \\
-  && Karen Fajardo \\
-  && kfajardo@torontomu.ca \\[10pt]
-  && {\large \textbf{Curriculum Vitae}} \\
-  && \textbf{Spring 2026}
+% ===================== HEADER =====================
+\noindent
+\begin{minipage}[t]{0.52\textwidth}
+  \vspace{0pt}
+  {\fontsize{18}{21}\selectfont\bfseries\mbox{Mohammad Amin Shirazian}}\\[5pt]
+  {\large\itshape (Amin)}\\[7pt]
+  {\Large\itshape Curriculum Vitae}\\[3pt]
+  {\footnotesize\href{https://aminshz.github.io/my-website/resume/resume.pdf}{Latest version}}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.40\textwidth}
+  \vspace{0pt}
+  \raggedleft\small
+  \textit{Toronto Metropolitan University}\\
+  {\scriptsize 350 Victoria Street, Toronto, ON M5B 2K3, Canada}\\[3pt]
+  \faEnvelope\enspace\href{mailto:amin.shirazian.work@gmail.com}{amin.shirazian.work@gmail.com}\\
+  \faGlobe\enspace\href{https://aminshz.github.io/my-website}{aminshz.github.io/my-website}\\[3pt]
+  {\scriptsize\mbox{Iranian - Canadian Open Work Permit, exp. 2030}}\\[1pt]
+  \textit{Updated: September 2026}
+\end{minipage}
+
+\vspace{0.8em}
+
+% ===================== RESEARCH FIELDS =====================
+\section{Research Fields}
+
+\begin{tabular}{@{}ll@{}}
+  Primary: & Macroeconomics, Health Economics \\
+  Secondary: & Public Economics, Political Economy
 \end{tabular}
-
-\vspace{1em}
-
-\begin{center}
-  {\Large \textbf{Amin Shirazian}}\\[4pt]
-  \href{https://aminshz.github.io/my-website/resume.html}{\small\textit{\textcolor{linkblue}{link to latest version}}}
-\end{center}
-
-\vspace{0.5em}
-
-% ===================== PERSONAL DATA =====================
-\section{Personal Data}
-
-\begin{tabular}{l p{20pt} p{250pt}}
-  \textit{Address} && \textit{Contact Information} \\
-  Department of Economics && Cell: (647) 686--9324 \\
-  Toronto Metropolitan University && Email: \href{mailto:amin.shirazian.work@gmail.com}{amin.shirazian.work@gmail.com} \\
-  350 Victoria Street, Toronto, ON M5B 2K3 && Website: \href{https://aminshz.github.io/my-website}{aminshz.github.io/my-website} \\
-  && LinkedIn: \href{https://linkedin.com/in/amin-shirazian}{linkedin.com/in/amin-shirazian} \\
-\end{tabular}
-
-\vspace{0.5em}
-\noindent Citizenship: Iran / Canada (S1 Visa, Open Work Permit \& Study Permit)
-
-% ===================== MAJOR FIELDS =====================
-\section{Major Fields of Concentration}
-
-Macroeconomics, Heterogeneous-Agent Models, Policy Analysis, Health Economics
-
-% ===================== EDUCATION =====================
-\section{Education}
-
-\begin{tabular}{llll}
-  \textit{Degree} & \textit{Field} & \textit{Institution} & \textit{Year} \\
-  Ph.D. (GPA: 4.17/4.33) & Economics & Toronto Metropolitan University & 2026 \\
-  M.A. (GPA: 4.00/4.33) & Economics & Tehran Institute for Advanced Studies & 2020 \\
-  B.A. (GPA: 3.14/4.33) & Economics & Tehran University & 2018 \\
-\end{tabular}
-
-\vspace{0.5em}
-\noindent\textbf{Dissertation:}\\
-Title: \textit{``Essays on Health Shocks and Other Precautionary Saving Motives''}\\
-Advisor: Professor Keyvan Eslami\\
-Expected Completion: Summer 2026
 
 % ===================== REFERENCES =====================
 \section{References}
@@ -110,103 +84,89 @@ Expected Completion: Summer 2026
   \href{mailto:fawcettk@torontomu.ca}{fawcettk@torontomu.ca} & \href{mailto:haomiao@torontomu.ca}{haomiao@torontomu.ca} \\
 \end{tabular}
 
-\pagebreak
+% ===================== EDUCATION =====================
+\section{Education}
 
-% ===================== HONORS AND AWARDS =====================
-\section{Honors and Awards}
+\begin{tabular}{@{}p{1.25in} p{5in}@{}}
+  2020--2026 & \textbf{Ph.D. in Economics}, \textit{Toronto Metropolitan University}. \\
+  & {\footnotesize Full Scholarship; GPA: A+} \\
+  & {\footnotesize Thesis: \textit{``Essays on Health Shocks and Other Precautionary Saving Motives''}} \\
+  & {\footnotesize Top Second-Year PhD Student, Toronto Metropolitan University (2021)} \\
+  \\[6pt]
 
-\begin{tabular}{p{2.5cm} p{15cm}}
-  2017--2026 & Full Graduate Scholarship: Ph.D.\ / M.A. \\
-  2022--2023 & Graduate Assistant Recognition Award, Toronto Metropolitan University \\
-  2021 & Top Second-Year PhD Student, Toronto Metropolitan University \\
+  2018--2020 & \textbf{M.A. in Economics}, \textit{Tehran Institute for Advanced Studies}. \\
+  & {\footnotesize Full Scholarship; GPA: A} \\
+  & {\footnotesize Ranked 68th nationally in Iran's MA Economics entrance examination} \\[6pt]
+
+  2011--2017 & \textbf{B.A. in Economics}, \textit{University of Tehran}. \\
+  & {\footnotesize Highly competitive, tuition-free admission through Iran's national entrance examination; GPA: B} \\
 \end{tabular}
 
-% ===================== TEACHING =====================
-\section{Teaching Experience}
+% ===================== SKILLS =====================
+\vspace{-4pt}
+\section{Skills}
 
-\begin{tabular}{p{2.5cm} p{15cm}}
-  Summer 2024 -- Present &
-    \textbf{Contract Lecturer}, Department of Economics, Toronto Metropolitan University.
-    Taught \textit{Intermediate Macroeconomics I} (×3), \textit{Introductory Macroeconomics},
-    \textit{Economic Issues in Globalization} (×2) \\[6pt]
-
-  January 2021 -- Present &
-    \textbf{Teaching Assistant}, Department of Economics, Toronto Metropolitan University.
-    Taught \textit{Adv.\ Macroeconomics I}, \textit{Mathematical Economics},
-    \textit{Advanced Microeconomics II}; led PhD tutorials \\[6pt]
-
-  January 2018 -- January 2020 &
-    \textbf{Teaching Assistant}, Tehran Institute for Advanced Studies / Khatam University.
-    Taught \textit{Advanced Macroeconomics}, \textit{Advanced Financial Economics}; led MA tutorials \\
-\end{tabular}
-
-% ===================== RESEARCH EXPERIENCE =====================
-\section{Research Experience}
-
-\begin{tabular}{p{2.5cm} p{15cm}}
-  2022--Present & Research Assistant, Department of Economics, Toronto Metropolitan University \\[4pt]
-  Summer 2023   & Research Assistant, Department of Economics, University of Toronto \\[4pt]
-  2018--2020    & Research Assistant, TeIAS, Tehran, Iran (Prof.\ Hagh-Panah) \\
-\end{tabular}
-
-% ===================== PROFESSIONAL EXPERIENCE =====================
-\section{Professional Experience}
-
-\begin{tabular}{p{2.5cm} p{15cm}}
-  2023--2024 & \textit{VP Education}, Economics Graduate Students Association, Toronto Metropolitan University \\[4pt]
-  2022--2023 & \textit{VP Communication}, Economics Graduate Students Association, Toronto Metropolitan University \\[4pt]
-  2021--2022 & \textit{President}, Economics Graduate Students Association, Toronto Metropolitan University \\[4pt]
-  2021--2022 & \textit{Director}, Graduate Students Union, Toronto Metropolitan University \\[4pt]
-  2014--2015 & \textit{Director}, Students Union, University of Tehran, Faculty of Economics \\
-\end{tabular}
-
-% ===================== PAPERS =====================
-\section{Papers}
-
-\begin{itemize}
-  \item Shirazian, A. \textit{``Marginal Utility Shocks and the Precautionary Saving Puzzle''}, Job Market Paper
-    (\href{https://aminshz.github.io/my-website/paper1.pdf}{pdf}).
-
-  \item Shirazian, A. \textit{``Means-Tested Insurance and Pareto-Tailed Wealth Distribution''}
-    (\href{https://aminshz.github.io/my-website/paper2.pdf}{pdf}).
-
-  \item Shirazian, A. \textit{``Online Innovation, Market Entry and Competition in Remote Indigenous Communities''},
-    with Yasir Mudathir and Nicholas Li, \textit{in progress}.
-
-  \item Shirazian, A. \textit{``Women Live Longer: Retirement Saving Puzzle''}, Masters Thesis.
-\end{itemize}
-
-% ===================== COMPUTER SKILLS =====================
-\section{Computer Skills}
-
-\noindent\textbf{Statistical / data:} Stata, R, Python (Selenium, BeautifulSoup) \,$\cdot$\,
+{\footnotesize\noindent\textbf{Statistical / data:} Stata, R, Python (Selenium, BeautifulSoup) \,$\cdot$\,
 \textbf{Computational:} MATLAB, C++ \,$\cdot$\,
-\textbf{Other:} \LaTeX{}, Git, HTML/CSS
+\textbf{Other:} \LaTeX{}, Git, HTML/CSS \,$\cdot$\,
+\textbf{Languages:} English (fluent), Persian (native)}
 
-% ===================== LANGUAGES =====================
-\section{Languages}
+\pagebreak
+\small
 
-English (fluent), Persian (native)
+% ===================== JOB MARKET PAPER =====================
+\section{Job Market Paper}
 
-\newpage
+\textbf{Marginal Utility Shocks and the Precautionary Saving Puzzle}
+\hfill
+{\footnotesize\href{https://aminshz.github.io/my-website/paper1.pdf}{latest version}}
 
-% ===================== ABSTRACTS =====================
-\section{Abstracts}
+{\footnotesize\textit{Documenting that both saving and medical spending accelerate at the top, the paper derives a sufficient condition for saving to remain positive at arbitrarily high wealth and shows that the resulting stationary wealth distribution has Pareto tails, the first such result from precautionary saving alone. Calibrated to the data, the mechanism accounts for roughly 11 percent of observed saving in the top wealth decile.}}
 
-\entry{Marginal Utility Shocks and the Precautionary Saving Puzzle}{Job Market Paper}
-\textit{This paper asks whether precautionary saving induced by health shocks helps explain saving at the top of the wealth distribution. Using the Health and Retirement Study, it documents that pre-retirement couples in the top wealth decile save about \$1.1 million over two years, whereas standard income-fluctuation models predict roughly \$2 million of dissaving. It then shows that a luxury-health framework, in which survival remains valuable at all wealth levels, can resolve this puzzle. The paper embeds this framework in an income-fluctuation model and derives a sufficient condition under which the precautionary saving motive remains active at arbitrarily high wealth. Given that saving remains positive beyond this threshold and mortality generates random separation across cohorts, it proves that the induced stationary wealth distribution has Pareto tails, the first such result from precautionary saving alone. After estimating the health production function and calibrating the model, the paper shows that the mechanism predicts saving of \$121,960 against \$1.1 million observed in the top decile, accounting for roughly 11 percent of observed top-decile saving, whereas the benchmark model predicts dissaving.}
-
-\vspace{1em}
+% ===================== WORK IN PROGRESS =====================
+\section{Work in Progress}
 
 \entry{Means-Tested Insurance and Pareto-Tailed Wealth Distribution}{In Progress}
-\textit{This paper imputes total medical spending for the Health and Retirement Study (HRS) using the
-Medical Expenditure Panel Survey (MEPS) and discusses moment consistency of the imputed health expenditure.
-The main theorem proves that, under classical assumptions, OLS estimates remain consistent when using
-the imputed dependent variable.}
+\textit{This paper studies how means-tested healthcare programs affect household wealth accumulation.
+The usual view emphasizes that households may decumulate wealth to qualify for coverage. We identify
+a countervailing dynamic force: in each period, households choose whether to reduce their assets and
+become eligible or to remain ineligible and preserve their wealth. Repeated decisions to remain
+ineligible can generate sustained wealth accumulation and contribute to wealth concentration at the
+top of the distribution. Evaluating this eligibility choice empirically requires total medical spending,
+including the insurance component. Because this measure is unavailable in the Health and Retirement
+Study, the paper imputes it using the Medical Expenditure Panel Survey (MEPS). It develops conditions
+for consistency of the imputation and of OLS estimates using the imputed dependent variable. A stylized model shows how
+an asset threshold for means-tested insurance can generate strategic asset decumulation, linking
+insurance eligibility to household saving behavior.}
 
 \vspace{1em}
 
-\entry{Women Live Longer: Retirement Saving Puzzle}{MA Thesis}
+\entry{Online Innovation, Market Entry and Competition in Remote Indigenous Communities}{In Progress}
+\textit{With Nicholas Li and Yasir Mudathir.}
+
+\vspace{1em}
+
+\entry{Health Production Function and Longevity}{In Progress}
+\textit{This project studies the health production function by identifying which health products and
+medical technologies improve survival, how effectively private treatment supplements available care,
+and how rapidly returns to additional medical spending diminish. It examines the wealth threshold at
+which households begin to demand these products and the characteristics beyond wealth that shape the
+demand for longevity, while addressing the two-way relationship between longevity preferences and
+wealth accumulation.}
+
+\vspace{1em}
+
+\entry{Optimal Insurance Against Mortality Shocks}{In Progress}
+\textit{This project extends the current framework to a general-equilibrium model with bequest motives
+and family dynamics. The model captures how households share health risks, provide informal care,
+transfer wealth across generations, and save for medical needs and bequests. It evaluates how much of
+saving across the wealth distribution these motives explain, whether household choices under the
+existing healthcare and insurance system are efficient, and when incomplete insurance markets create
+a rationale for government intervention.}
+
+\vspace{1em}
+
+\entry{Gender and Longevity: A Retirement Saving Puzzle}{MA Thesis}
 \textit{This paper presents an explanation to the excess sensitivity of consumption to the drop in income
 around retirement, known as the ``retirement saving puzzle.'' We confirm this empirical puzzle also
 prevails among Iranian families. That is, an unpredicted drop occurs in households' non-durable
@@ -214,6 +174,66 @@ expenditures around the age of 65, which cannot be resolved even by decomposing 
 according to their labor status. Then, by taking into account the diversity in the gender composition
 of cohorts, we demonstrate that the gap between predicted and actual non-durable expenditures is no
 longer apparent.}
+
+\newpage
+\titlespacing{\section}{0pt}{7pt}{4pt}
+
+% ===================== TEACHING =====================
+\section{Teaching \& Work Experience}
+
+\textbf{Teaching}\\[5pt]
+
+\begin{tabular}{p{2.5cm} p{15cm}}
+  Summer 2024 -- Present &
+    \textbf{Contract Lecturer}, Department of Economics, Toronto Metropolitan University.
+    \\[-1pt]
+  & {\scriptsize Fall 2026: CECN230 -- \textit{Mathematics for Economics} (enrollment TBD)} \\
+  & {\scriptsize Summer 2026: CECN600 -- \textit{Intermediate Macroeconomics II} (20 students)} \\
+  & {\scriptsize Spring 2026: CECN603 -- \textit{Economic Issues in Globalization} (53 students)} \\
+  & {\scriptsize Winter 2026: CECN301 -- \textit{Intermediate Macroeconomics I} (87 students)} \\
+  & {\scriptsize Fall 2025: CECN301 -- \textit{Intermediate Macroeconomics I} (38 students)} \\
+  & {\scriptsize Summer 2025: CECN603 -- \textit{Economic Issues in Globalization} (44 students)} \\
+  & {\scriptsize Winter 2025: CECN301 -- \textit{Intermediate Macroeconomics I} (61 students)} \\
+  & {\scriptsize Summer 2024: CECN204 -- \textit{Introductory Macroeconomics} (59 students)} \\
+\end{tabular}
+
+\vspace{9pt}
+\textbf{Graduate Assistant}\\[3pt]
+
+\begin{tabular}{p{2.5cm} p{15cm}}
+  2018 -- Fall 2026 & \textbf{Teaching Assistant} \\[2pt]
+  & Department of Economics, Toronto Metropolitan University. \\
+  &
+    Taught \textit{Adv.\ Macroeconomics I}, \textit{Mathematical Economics},
+    \textit{Advanced Microeconomics II}; led PhD tutorials \\[6pt]
+
+  &
+    Tehran Institute for Advanced Studies / Khatam University.
+    Taught \textit{Advanced Macroeconomics}, \textit{Advanced Financial Economics}; led MA tutorials \\[3pt]
+  & {\scriptsize Graduate Assistant Recognition Award, Toronto Metropolitan University (2022--2023)} \\[9pt]
+
+  2022--2024 & \textbf{Research Assistant} \\[2pt]
+  & Department of Economics, Toronto Metropolitan University \\
+  & {\scriptsize Prof. Keyvan Eslami -- \textit{Imputing Total Medical Spending}: Combined HRS and MEPS data to impute total medical spending for econometric analysis.} \\[3pt]
+  & Department of Economics, University of Toronto \\
+  & {\scriptsize Prof. Nicholas Li -- \textit{Nutrition North Price Data}: Built a web-scraping workflow to collect and organize prices from Nutrition North program providers' websites.} \\[3pt]
+  & Tehran Institute for Advanced Studies, Tehran, Iran \\
+  & {\scriptsize Prof. Farshad Hagh-Panah -- \textit{Household Income and Expenditure Survey Database}: Collected, streamlined, and cleaned HIES data and constructed a database of households classified by the gender of the household head.} \\
+\end{tabular}
+
+% ===================== PROFESSIONAL EXPERIENCE =====================
+\vspace{9pt}
+\textbf{Union Experience}\\[3pt]
+
+\begin{tabular}{p{2.5cm} p{15cm}}
+  2021--2023 & \textbf{Economics Graduate Students Association}, Toronto Metropolitan University \\
+  & \textit{President} (2021--2022); \textit{VP Communication} (2022--2023) \\
+  & {\scriptsize Student-association leadership focused on planning events, coordinating funding with the student union and faculty, and managing teams, invitations, and logistics.} \\[4pt]
+  2021--2022 & \textbf{Union Governance -- Faculty of Arts Director}, Toronto Metropolitan Graduate Students' Union (TMGSU) \\
+  & {\scriptsize Represented the Faculty of Arts on the union board; reviewed bylaws, attended governance meetings, helped develop the newly established union's structure, and contributed to funding decisions for health insurance and graduate-student travel.} \\
+\end{tabular}
+
+\normalsize
 
 \vfill
 
