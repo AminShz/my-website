@@ -732,7 +732,7 @@ p {
   color: #e4c07e;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 900px) {
   .home-page .home-nav {
     min-height: 0;
     padding: 18px 20px;
@@ -1193,7 +1193,7 @@ p {
   color: #aeb7bc;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 900px) {
   .interior-page .home-nav {
     min-height: 0;
     padding: 18px 20px;
