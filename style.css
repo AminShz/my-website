@@ -321,10 +321,13 @@ p {
 
 /* Theme toggle button (injected into nav by theme.js) — pinned far right */
 .theme-toggle {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-height: 28px;
+  margin: 0;
   padding: 4px 10px;
   font-size: 12px;
   font-weight: bold;
@@ -444,6 +447,7 @@ p {
   padding: 22px 54px;
   background: #050606;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 42px;
 }
 
@@ -465,10 +469,12 @@ p {
 
 .home-page .nav-links {
   display: flex;
+  min-width: 0;
   align-items: center;
   justify-content: flex-end;
   gap: 30px;
-  padding-right: 92px;
+  padding-right: 0;
+  flex-wrap: wrap;
 }
 
 .home-page .home-nav a:hover,
@@ -483,7 +489,6 @@ p {
 }
 
 .home-page .theme-toggle {
-  right: 24px;
   color: #f4f0e9;
   border-color: rgba(244, 240, 233, 0.45);
   font-family: Arial, sans-serif;
@@ -727,7 +732,7 @@ p {
   color: #e4c07e;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
   .home-page .home-nav {
     min-height: 0;
     padding: 18px 20px;
@@ -753,11 +758,6 @@ p {
 
   .home-page .home-nav a {
     font-size: 15px;
-  }
-
-  .home-page .theme-toggle {
-    right: 18px;
-    top: 28px;
   }
 
   .home-hero {
@@ -856,6 +856,7 @@ p {
   min-height: 92px;
   padding: 22px 54px;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 42px;
 }
 
@@ -876,10 +877,12 @@ p {
 
 .interior-page .nav-links {
   display: flex;
+  min-width: 0;
   align-items: center;
   justify-content: flex-end;
   gap: 30px;
-  padding-right: 92px;
+  padding-right: 0;
+  flex-wrap: wrap;
 }
 
 .interior-page .home-nav a:hover,
@@ -895,7 +898,6 @@ p {
 }
 
 .interior-page .theme-toggle {
-  right: 24px;
   color: #f4f0e9;
   border-color: rgba(244, 240, 233, 0.45);
   font-family: Arial, sans-serif;
@@ -1191,7 +1193,7 @@ p {
   color: #aeb7bc;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
   .interior-page .home-nav {
     min-height: 0;
     padding: 18px 20px;

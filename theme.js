@@ -14,6 +14,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     var nav = document.querySelector("nav");
     if (!nav) return;
+    var navLinks = nav.querySelector(".nav-links");
 
     var btn = document.createElement("button");
     btn.className = "theme-toggle";
@@ -29,6 +30,6 @@
       applyButtonLabel(btn);
     });
 
-    nav.appendChild(btn);
+    (navLinks || nav).appendChild(btn);
   });
 })();
