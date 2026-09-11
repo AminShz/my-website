@@ -7,7 +7,8 @@
 
   function applyButtonLabel(btn) {
     var isDark = document.documentElement.classList.contains("dark");
-    btn.textContent = isDark ? "☀ Light" : "🌙 Dark";
+    btn.textContent = isDark ? "☀" : "☾";
+    btn.title = isDark ? "Switch to light mode" : "Switch to dark mode";
     btn.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
   }
 
