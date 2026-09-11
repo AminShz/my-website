@@ -1020,6 +1020,10 @@ p {
   font-style: italic;
 }
 
+.work-in-progress .paper + .paper {
+  margin-top: 32px;
+}
+
 .interior-page .courses li {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(150px, auto);
