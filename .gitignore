@@ -11,3 +11,6 @@
 *.nav
 *.snm
 *.vrb
+
+# Local Codex notes and memory
+.CHATGPT/
